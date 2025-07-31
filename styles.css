@@ -1,1 +1,42 @@
+:root {
+  --deep-purple: rgba(58, 12, 163, 1);
+  --bright-blue: rgba(67, 97, 238, 1);
+  --sky-blue: rgba(58, 134, 255, 1);
+  --vibrant-purple: rgba(131, 56, 236, 1);
+  --hot-pink: rgba(255, 0, 110, 1);
 
+  --fs-300: clamp(0.94rem, calc(0.92rem + 0.08vw), 0.98rem);
+  --fs-400: clamp(1.13rem, calc(1.06rem + 0.33vw), 1.31rem);
+  --fs-500: clamp(1.35rem, calc(1.21rem + 0.69vw), 1.75rem);
+  --fs-600: clamp(1.62rem, calc(1.37rem + 1.24vw), 2.33rem);
+  --fs-700: clamp(1.94rem, calc(1.54rem + 2.03vw), 3.11rem);
+  --fs-800: clamp(2.33rem, calc(1.7rem + 3.15vw), 4.14rem);
+  --fs-900: clamp(2.8rem, calc(1.85rem + 4.74vw), 5.52rem);
+}
+
+:where(*, *::before, *::after): {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.gradient-text {
+    background-image: linear-gradient(135deg, 
+    var(--deep-purple), 
+    var(--bright-blue), 
+    var(--sky-blue), 
+    var(--vibrant-purple), 
+    var(--hot-pink));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: var(--fs-900);
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1;
+  display: inline-block;
+
+}
