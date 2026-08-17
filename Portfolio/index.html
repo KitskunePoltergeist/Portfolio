@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <noscript>You will need to enable JavaScript to use this website.</noscript>
+    <meta property="og:title" content="Portfolio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image:width" content="100" />
+    <meta property="og:image:height" content="100" />
+    <meta property="og:description"
+        content="Aidan is a junior front-end web developer focused on sleek UI-UX, while also maintaining accessibility and semantics in mind." />
+</head>
+
+<body>
+    <main>
+        <!--SOURCE MAP-->
+        <a href="script.js" hreflang="en" class="visually-hidden"></a>
+        <!--JAVASCRIPT-->
+        <a href="style.css" hreflang="en" class="visually-hidden"></a>
+        <!--CSS-->
+        <a href="content-grid.css" hreflang="en" class="visually-hidden"></a>
+        <!--CONTENT GRID STYLES-->
+        <!--SOURCE MAP ENDS-->
+        <section class="intro" id="intro">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="#" class="no-select">Home</a></li>
+                        <li><a href="#about" class="no-select">About</a></li>
+                        <li><a href="#" class="no-select">Contact</a></li>
+                        <li><a href="#" class="no-select">Source Code</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="theme-wrapper">
+                <form>
+                    <fieldset>
+                        <input type="radio" id="light" value="light" name="theme" class="visually-hidden" />
+                        <label for="light" class="theme-display no-select pill-shape">
+                            <svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                class="theme-identifier">
+                                <path
+                                    d="M12 22C17.5228 22 22 17.5228 22 12C22 11.5373 21.3065 11.4608 21.0672 11.8568C19.9289 13.7406 17.8615 15 15.5 15C11.9101 15 9 12.0899 9 8.5C9 6.13845 10.2594 4.07105 12.1432 2.93276C12.5392 2.69347 12.4627 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </label>
+                        <input type="radio" id="dark" value="dark" name="theme" class="visually-hidden" />
+                        <label for="dark" class="theme-display no-select pill-shape">
+                            <svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                class="theme-identifier">
+                                <path
+                                    d="M17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12Z"
+                                    fill="currentColor" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12 1.25C12.4142 1.25 12.75 1.58579 12.75 2V4C12.75 4.41421 12.4142 4.75 12 4.75C11.5858 4.75 11.25 4.41421 11.25 4V2C11.25 1.58579 11.5858 1.25 12 1.25ZM3.66865 3.71609C3.94815 3.41039 4.42255 3.38915 4.72825 3.66865L6.95026 5.70024C7.25596 5.97974 7.2772 6.45413 6.9977 6.75983C6.7182 7.06553 6.2438 7.08677 5.9381 6.80727L3.71609 4.77569C3.41039 4.49619 3.38915 4.02179 3.66865 3.71609ZM20.3314 3.71609C20.6109 4.02179 20.5896 4.49619 20.2839 4.77569L18.0619 6.80727C17.7562 7.08677 17.2818 7.06553 17.0023 6.75983C16.7228 6.45413 16.744 5.97974 17.0497 5.70024L19.2718 3.66865C19.5775 3.38915 20.0518 3.41039 20.3314 3.71609ZM1.25 12C1.25 11.5858 1.58579 11.25 2 11.25H4C4.41421 11.25 4.75 11.5858 4.75 12C4.75 12.4142 4.41421 12.75 4 12.75H2C1.58579 12.75 1.25 12.4142 1.25 12ZM19.25 12C19.25 11.5858 19.5858 11.25 20 11.25H22C22.4142 11.25 22.75 11.5858 22.75 12C22.75 12.4142 22.4142 12.75 22 12.75H20C19.5858 12.75 19.25 12.4142 19.25 12ZM17.0255 17.0252C17.3184 16.7323 17.7933 16.7323 18.0862 17.0252L20.3082 19.2475C20.6011 19.5404 20.601 20.0153 20.3081 20.3082C20.0152 20.6011 19.5403 20.601 19.2475 20.3081L17.0255 18.0858C16.7326 17.7929 16.7326 17.3181 17.0255 17.0252ZM6.97467 17.0253C7.26756 17.3182 7.26756 17.7931 6.97467 18.086L4.75244 20.3082C4.45955 20.6011 3.98468 20.6011 3.69178 20.3082C3.39889 20.0153 3.39889 19.5404 3.69178 19.2476L5.91401 17.0253C6.2069 16.7324 6.68177 16.7324 6.97467 17.0253ZM12 19.25C12.4142 19.25 12.75 19.5858 12.75 20V22C12.75 22.4142 12.4142 22.75 12 22.75C11.5858 22.75 11.25 22.4142 11.25 22V20C11.25 19.5858 11.5858 19.25 12 19.25Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </label>
+                    </fieldset>
+                </form>
+            </div>
+            <content-grid>
+                <h1 full-width class="banner">
+                    Welcome to my <span>Portfolio</span>
+                </h1>
+                <div class="overview">
+                    <label for="accordion" class="overview-label-wrapper">
+                        <h2 class="overview__banner">Overview</h2>
+                        <input type="checkbox" id="accordion" value="accordion"
+                            class="visually-hidden overview-checkbox" />
+                        <p class="overview__in-depth">
+                            I'm Aidan, a junior front-end web developer focused on sleek
+                            UI-UX, while also maintaining accessibility and semantics in
+                            mind. Let's build something great together!
+                        </p>
+                    </label>
+                </div>
+                <fancy-link href="#about" target="_self" count="50" data-color="accent" data-place="intro">
+                    Learn More
+                </fancy-link>
+            </content-grid>
+        </section>
+        <section class="about" id="about">
+            <content-grid>
+                <div class="banner-wrapper">
+                    <h2 class="banner" full-width>I'm <span>Aidan</span></h2>
+                    <span class="caption">Want to build something great? Let me <em>help!</em></span>
+                </div>
+                <div class="scroller-wrapper no-select" full-width>
+                    <div full-width class="scroller" data-animated="true" data-speed="fast">
+                        <ul class="tag-list scroller__inner">
+                            <li class="typescript">
+                                <img src="https://sdtimes.com/wp-content/uploads/2018/09/1_JsyV8lXMuTbRVLQ2FPYWAg-1024x1024.png"
+                                    alt="TypeScript" />
+                                <p>TypeScript</p>
+                            </li>
+                            <li class="astro">
+                                <img src="https://raw.githubusercontent.com/purecss-co/astro-logo/main/screenshot.png"
+                                    alt="Astro" />
+                                <p>Astro</p>
+                            </li>
+                            <li class="shadcn">
+                                <img src="https://tse2.mm.bing.net/th/id/OIP.MuYLlZRuJQRb1YnQEzPpuQHaEv?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="ShadCN" />
+                                <p>ShadCN</p>
+                            </li>
+                            <li class="vite">
+                                <img src="https://cdn.cleancommit.io/blog/2023/02/Vite-logo.jpg" alt="Vite" />
+                                <p>Vite</p>
+                            </li>
+                            <li class="scss">
+                                <img src="https://th.bing.com/th/id/R.951d6e38db0a4b2e35cc00482c1d3784?rik=EcffwIoZRtiPfQ&pid=ImgRaw&r=0"
+                                    alt="SCSS" />
+                                <p>SCSS</p>
+                            </li>
+                            <li class="gsap">
+                                <img src="https://www.npmjs.com/npm-avatar/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdmF0YXJVUkwiOiJodHRwczovL3MuZ3JhdmF0YXIuY29tL2F2YXRhci81YTIyNGYxMjFmOTZiZDAzN2JmNmMxYzFlMmI2ODZmYj9zaXplPTEwMCZkZWZhdWx0PXJldHJvIn0.dZJrEKgfCiKSRE8an9x6P_NBfXPaQdcNWBC8-wB0gZY"
+                                    alt="GSAP" />
+                                <p>GSAP</p>
+                            </li>
+                            <li class="react">
+                                <img src="https://tse1.mm.bing.net/th/id/OIP.K-4RqDC6zFrpAG31ayDDOgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+                                    alt="React" />
+                                <p>React</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <blockquote class="mission">
+                    <p>
+                        I'm a junior front-end web developer with a passion for creating
+                        sleek and user-friendly interfaces. I specialize in using modern
+                        web technologies to build responsive and accessible websites. With
+                        a strong focus on UI/UX design, I strive to create engaging and
+                        intuitive experiences for users. I'm always eager to learn new
+                        skills and stay up-to-date with the latest trends in web
+                        development. Let's work together to bring your ideas to life!
+                    </p>
+                </blockquote>
+                <div breakout class="mindset">
+                    <p>
+                        Please do note that I am aware of how to use libraries, tools, and
+                        bundlers such as React, Astro, and Vite, I try to create sites
+                        using vanilla HTML, CSS, and JavaScript unless otherwise needed.
+                    </p>
+                </div>
+            </content-grid>
+        </section>
+        <section>
+            <h2 class="banner banner-projects"><span>Project Gallery</span></h2>
+            <div class="overflow-scroller-wrapper">
+                <div class="overflow-scroller">
+                    <div class="card">
+                        <div class="image-container">
+                            <img class="image"
+                                src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=200&fit=crop&auto=format"
+                                alt="Wireless Headphones" />
+                        </div>
+                        <h3 class="title">Python RPS</h3>
+                        <fancy-link href="#" count="50" data-color="brand-gradient-100" data-place="card">
+                            Take a look!
+                        </fancy-link>
+                    </div>
+                    <div class="card">
+                        <div class="image-container">
+                            <img class="image"
+                                src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=200&fit=crop&auto=format"
+                                alt="Wireless Headphones" />
+                        </div>
+                        <h3 class="title">Python RPS</h3>
+                        <fancy-link href="#" count="50" data-color="brand-gradient-100" data-place="card">
+                            Take a look!
+                        </fancy-link>
+                    </div>
+                    <div class="card">
+                        <div class="image-container">
+                            <img class="image"
+                                src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=200&fit=crop&auto=format"
+                                alt="Wireless Headphones" />
+                        </div>
+                        <h3 class="title">Python RPS</h3>
+                        <fancy-link href="#" count="50" data-color="brand-gradient-100" data-place="card">
+                            Take a look!
+                        </fancy-link>
+                    </div>
+                    <div class="card">
+                        <div class="image-container">
+                            <img class="image"
+                                src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=200&fit=crop&auto=format"
+                                alt="Wireless Headphones" />
+                        </div>
+                        <h3 class="title">Python RPS</h3>
+                        <fancy-link href="#" count="50" data-color="brand-gradient-100" data-place="card">
+                            Take a look!
+                        </fancy-link>
+                    </div>
+                    <div class="card">
+                        <div class="image-container">
+                            <img class="image"
+                                src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=200&fit=crop&auto=format"
+                                alt="Wireless Headphones" />
+                        </div>
+                        <h3 class="title">Python RPS</h3>
+                        <fancy-link href="#" count="50" data-color="brand-gradient-100" data-place="card">
+                            Take a look!
+                        </fancy-link>
+                    </div>
+                    <div class="card">
+                        <div class="image-container">
+                            <img class="image"
+                                src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=200&fit=crop&auto=format"
+                                alt="Wireless Headphones" />
+                        </div>
+                        <h3 class="title">Python RPS</h3>
+                        <fancy-link href="#" count="50" data-color="brand-gradient-100" data-place="card">
+                            Take a look!
+                        </fancy-link>
+                    </div>
+                    <div class="card">
+                        <div class="image-container">
+                            <img class="image"
+                                src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=200&fit=crop&auto=format"
+                                alt="Wireless Headphones" />
+                        </div>
+                        <h3 class="title">Python RPS</h3>
+                        <fancy-link href="#" count="50" data-color="brand-gradient-100" data-place="card">
+                            Take a look!
+                        </fancy-link>
+                    </div>
+                </div>
+            </div>
+            <span>Inspired by these projects and want help designing your own?
+                <a href="#contact" hreflang="en">Contact</a> me!</span>
+        </section>
+        <section id="source-code" class="source-code">
+            <h2 class="banner banner-source-code"><span>Source Code</span></h2>
+            <div class="source-code-wrapper">
+                <p>
+                    Interested in how this website was built? Check out the source code!
+                </p>
+                <fancy-link href="" count="50" data-color="accent" data-place="source">
+                    View on GitHub
+                </fancy-link>
+                <p>
+                    I am usually open-source on many personal projects. Feel free to
+                    contact me for source code to any project that you can't find.
+                    Usually, I will say yes!
+                </p>
+                <p>
+                    However, if you would like me to be close-sourced for a project I
+                    have worked on for you, I have no problem doing so!
+                </p>
+                <p class="places">
+                    <i>Codepen</i>
+                    <fancy-link data-place="source" data-color="brand-gradient-200"
+                        href="https://codepen.io/Aidan-Du">Codepen</fancy-link>
+                </p>
+                <p class="places">
+                    <i>Github</i>
+                    <fancy-link data-place="source" data-color="brand-gradient-200"
+                        href="https://github.com/KitskunePoltergeist">Github</fancy-link>
+                </p>
+            </div>
+        </section>
+        <section id="contact">
+            <content-grid>
+                <h2 class="banner banner-contact"><span>Contact Me</span></h2>
+                <p class="contact-method">Have a project in mind? Let's collaborate!</p>
+                <fancy-button count="50" popovertarget="popover" data-color="accent" data-place="contact">
+                    Contact Me
+                </fancy-button>
+                <div popover id="popover" class="popover">
+                    <p>Email: aidan.du@<span class="email-obfuscation">kliuyg6tfrbvki;pyjfc-9idhw9itn-wb0szdiojgtyku</span>yahoo.com</p>
+                </div>
+                <footer class="footer">
+                    <p>2026 Aidan Du. All rights reserved.</p> <a href="#intro">Back to Top</a>
+                </footer>
+            </content-grid>
+        </section>
+    </main>
+</body>
+
+</html>
