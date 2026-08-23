@@ -7,6 +7,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
+    <script src="animation.js" type="module"></script>
     <noscript>You will need to enable JavaScript to use this website.</noscript>
     <meta property="og:title" content="Portfolio" />
     <meta property="og:type" content="website" />
@@ -32,8 +33,8 @@
                     <ul>
                         <li><a href="#" class="no-select">Home</a></li>
                         <li><a href="#about" class="no-select">About</a></li>
-                        <li><a href="#" class="no-select">Contact</a></li>
-                        <li><a href="#" class="no-select">Source Code</a></li>
+                        <li><a href="#contact" class="no-select">Contact</a></li>
+                        <li><a href="#source-code" class="no-select">Source Code</a></li>
                     </ul>
                 </nav>
             </header>
@@ -65,9 +66,7 @@
                 </form>
             </div>
             <content-grid>
-                <h1 full-width class="banner">
-                    Welcome to my <span>Portfolio</span>
-                </h1>
+                <h1 full-width class="banner" id="hero-text">Welcome to Aidan's <span>Portfolio</span></h1>
                 <div class="overview">
                     <label for="accordion" class="overview-label-wrapper">
                         <h2 class="overview__banner">Overview</h2>
@@ -87,52 +86,50 @@
         </section>
         <section class="about" id="about">
             <content-grid>
-                <div class="banner-wrapper">
-                    <h2 class="banner" full-width>I'm <span>Aidan</span></h2>
-                    <span class="caption">Want to build something great? Let me <em>help!</em></span>
-                </div>
+                <h2 class="banner" full-width>I'm <span>Aidan</span></h2>
+                <span class="caption">Want to build something great? Let me <em>help!</em></span>
                 <div class="scroller-wrapper no-select" full-width>
                     <div full-width class="scroller" data-animated="true" data-speed="fast">
                         <ul class="tag-list scroller__inner">
                             <li class="typescript">
                                 <img src="https://sdtimes.com/wp-content/uploads/2018/09/1_JsyV8lXMuTbRVLQ2FPYWAg-1024x1024.png"
                                     alt="TypeScript" />
-                                <p>TypeScript</p>
+                                <text-flip persist>TypeScript</text-flip>
                             </li>
                             <li class="astro">
                                 <img src="https://raw.githubusercontent.com/purecss-co/astro-logo/main/screenshot.png"
                                     alt="Astro" />
-                                <p>Astro</p>
+                                <text-flip persist>Astro</text-flip>
                             </li>
                             <li class="shadcn">
-                                <img src="https://tse2.mm.bing.net/th/id/OIP.MuYLlZRuJQRb1YnQEzPpuQHaEv?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="ShadCN" />
-                                <p>ShadCN</p>
+                                <img src="https://tse2.mm.bing.net/th/id/OIP.MuYLlZRuJQRb1YnQEzPpuQHaEv?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                                    alt="ShadCN" />
+                                <text-flip persist>ShadCN</text-flip>
                             </li>
                             <li class="vite">
                                 <img src="https://cdn.cleancommit.io/blog/2023/02/Vite-logo.jpg" alt="Vite" />
-                                <p>Vite</p>
+                                <text-flip persist>Vite</text-flip>
                             </li>
                             <li class="scss">
                                 <img src="https://th.bing.com/th/id/R.951d6e38db0a4b2e35cc00482c1d3784?rik=EcffwIoZRtiPfQ&pid=ImgRaw&r=0"
                                     alt="SCSS" />
-                                <p>SCSS</p>
+                                <text-flip persist>SCSS</text-flip>
                             </li>
                             <li class="gsap">
                                 <img src="https://www.npmjs.com/npm-avatar/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdmF0YXJVUkwiOiJodHRwczovL3MuZ3JhdmF0YXIuY29tL2F2YXRhci81YTIyNGYxMjFmOTZiZDAzN2JmNmMxYzFlMmI2ODZmYj9zaXplPTEwMCZkZWZhdWx0PXJldHJvIn0.dZJrEKgfCiKSRE8an9x6P_NBfXPaQdcNWBC8-wB0gZY"
                                     alt="GSAP" />
-                                <p>GSAP</p>
+                                <text-flip persist>GSAP</text-flip>
                             </li>
                             <li class="react">
                                 <img src="https://tse1.mm.bing.net/th/id/OIP.K-4RqDC6zFrpAG31ayDDOgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
                                     alt="React" />
-                                <p>React</p>
+                                <text-flip persist>React</text-flip>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <blockquote class="mission">
-                    <p>
-                        I'm a junior front-end web developer with a passion for creating
+                    <p>I'm a junior front-end web developer with a passion for creating
                         sleek and user-friendly interfaces. I specialize in using modern
                         web technologies to build responsive and accessible websites. With
                         a strong focus on UI/UX design, I strive to create engaging and
@@ -151,93 +148,47 @@
             </content-grid>
         </section>
         <section>
-            <h2 class="banner banner-projects"><span>Project Gallery</span></h2>
-            <div class="overflow-scroller-wrapper">
-                <div class="overflow-scroller">
-                    <div class="card">
-                        <div class="image-container">
-                            <img class="image"
-                                src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=200&fit=crop&auto=format"
-                                alt="Wireless Headphones" />
-                        </div>
-                        <h3 class="title">Python RPS</h3>
-                        <fancy-link href="#" count="50" data-color="brand-gradient-100" data-place="card">
-                            Take a look!
-                        </fancy-link>
+            <h2 class="banner banner-projects"><span style="background-position: top;">Project Gallery</span></h2>
+            <div class="overflow-scroller">
+                <div class="card">
+                    <div class="image-container">
+                        <img class="image"
+                            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=200&fit=crop&auto=format"
+                            alt="Wireless Headphones" />
                     </div>
-                    <div class="card">
-                        <div class="image-container">
-                            <img class="image"
-                                src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=200&fit=crop&auto=format"
-                                alt="Wireless Headphones" />
-                        </div>
-                        <h3 class="title">Python RPS</h3>
-                        <fancy-link href="#" count="50" data-color="brand-gradient-100" data-place="card">
-                            Take a look!
-                        </fancy-link>
+                    <h3 class="title">Python RPS</h3>
+                    <fancy-link href="#" count="50" data-color="brand-gradient-100" data-place="card">
+                        Take a look!
+                    </fancy-link>
+                </div>
+                <div class="card">
+                    <div class="image-container">
+                        <img class="image"
+                            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=200&fit=crop&auto=format"
+                            alt="Wireless Headphones" />
                     </div>
-                    <div class="card">
-                        <div class="image-container">
-                            <img class="image"
-                                src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=200&fit=crop&auto=format"
-                                alt="Wireless Headphones" />
-                        </div>
-                        <h3 class="title">Python RPS</h3>
-                        <fancy-link href="#" count="50" data-color="brand-gradient-100" data-place="card">
-                            Take a look!
-                        </fancy-link>
+                    <h3 class="title">Python RPS</h3>
+                    <fancy-link href="#" count="50" data-color="brand-gradient-100" data-place="card">
+                        Take a look!
+                    </fancy-link>
+                </div>
+                <div class="card">
+                    <div class="image-container">
+                        <img class="image"
+                            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=200&fit=crop&auto=format"
+                            alt="Wireless Headphones" />
                     </div>
-                    <div class="card">
-                        <div class="image-container">
-                            <img class="image"
-                                src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=200&fit=crop&auto=format"
-                                alt="Wireless Headphones" />
-                        </div>
-                        <h3 class="title">Python RPS</h3>
-                        <fancy-link href="#" count="50" data-color="brand-gradient-100" data-place="card">
-                            Take a look!
-                        </fancy-link>
-                    </div>
-                    <div class="card">
-                        <div class="image-container">
-                            <img class="image"
-                                src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=200&fit=crop&auto=format"
-                                alt="Wireless Headphones" />
-                        </div>
-                        <h3 class="title">Python RPS</h3>
-                        <fancy-link href="#" count="50" data-color="brand-gradient-100" data-place="card">
-                            Take a look!
-                        </fancy-link>
-                    </div>
-                    <div class="card">
-                        <div class="image-container">
-                            <img class="image"
-                                src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=200&fit=crop&auto=format"
-                                alt="Wireless Headphones" />
-                        </div>
-                        <h3 class="title">Python RPS</h3>
-                        <fancy-link href="#" count="50" data-color="brand-gradient-100" data-place="card">
-                            Take a look!
-                        </fancy-link>
-                    </div>
-                    <div class="card">
-                        <div class="image-container">
-                            <img class="image"
-                                src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=200&fit=crop&auto=format"
-                                alt="Wireless Headphones" />
-                        </div>
-                        <h3 class="title">Python RPS</h3>
-                        <fancy-link href="#" count="50" data-color="brand-gradient-100" data-place="card">
-                            Take a look!
-                        </fancy-link>
-                    </div>
+                    <h3 class="title">Python RPS</h3>
+                    <fancy-link href="#" count="50" data-color="brand-gradient-100" data-place="card">
+                        Take a look!
+                    </fancy-link>
                 </div>
             </div>
             <span>Inspired by these projects and want help designing your own?
                 <a href="#contact" hreflang="en">Contact</a> me!</span>
         </section>
         <section id="source-code" class="source-code">
-            <h2 class="banner banner-source-code"><span>Source Code</span></h2>
+            <h2 class="banner banner-source-code"><span style="background-position: right;">Source Code</span></h2>
             <div class="source-code-wrapper">
                 <p>
                     Interested in how this website was built? Check out the source code!
@@ -268,13 +219,14 @@
         </section>
         <section id="contact">
             <content-grid>
-                <h2 class="banner banner-contact"><span>Contact Me</span></h2>
+                <h2 class="banner banner-contact"><span style="background-position: bottom" ;>Contact Me</span></h2>
                 <p class="contact-method">Have a project in mind? Let's collaborate!</p>
                 <fancy-button count="50" popovertarget="popover" data-color="accent" data-place="contact">
                     Contact Me
                 </fancy-button>
                 <div popover id="popover" class="popover">
-                    <p>Email: aidan.du@<span class="email-obfuscation">kliuyg6tfrbvki;pyjfc-9idhw9itn-wb0szdiojgtyku</span>yahoo.com</p>
+                    <p>Email: aidan.du@<span
+                            class="email-obfuscation">kliuyg6tfrbvki;pyjfc-9idhw9itn-wb0szdiojgtyku</span>yahoo.com</p>
                 </div>
                 <footer class="footer">
                     <p>2026 Aidan Du. All rights reserved.</p> <a href="#intro">Back to Top</a>
