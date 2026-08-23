@@ -1,5 +1,5 @@
-import { gsap } from "./node_modules/gsap/index.js";
-import { SplitText } from "./node_modules/gsap/SplitText.js";
+import { gsap } from "gsap";
+import { SplitText } from "gsap/SplitText";
 
 gsap.registerPlugin(SplitText);
 
