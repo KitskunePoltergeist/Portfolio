@@ -1759,7 +1759,7 @@
 	.scroller[data-animated="true"] .scroller__inner {
 		inline-size: fit-content;
 		flex-wrap: nowrap;
-		animation: scroll calc(var(--motionOK) * var(--animation-duration, 40s)) var(--animation-direction, forwards) linear infinite;
+		animation: /*scroll*/ calc(var(--motionOK) * var(--animation-duration, 40s)) var(--animation-direction, forwards) linear infinite;
 	}
 
 	.scroller[data-direction="left"] {
